@@ -1,0 +1,47 @@
+Q1. What is Node.js? Where can you use it?
+A1. Node.js is an open-source, cross-platform JavaScript runtime environment and library for running web applications outside the client's browser.
+It is used for server-side programming, and primarily deployed for non-blocking, event-driven servers, such as traditional web sites and back-end API services. It can be run on windows, mac-OS, linux and unix.
+
+
+Q2. Explain callback in Node.js?
+A2. A callback is a function which is passed as an argument to another function and is called when a task is completed, thus helps in preventing any kind of blocking and allows other code to run in the meantime. It is asynchronous equivalent for a function.
+
+
+Q3. What are the advantages of using promises instead of callbacks?
+A3. Better defined and organised control flow of asynchronous logic.
+    Highly reduced coupling.
+    We have integrated error handling.
+    Enhanced readability.
+    Avoid callback hell.
+
+
+Q4. What is NPM?
+A4. NPM – or "Node Package Manager" – is the default package manager for JavaScript's runtime Node.js.
+
+    NPM consists of three distinct components:
+
+    1. The website;
+    Use the website to discover packages, set up profiles, and manage other aspects of your npm experience. For example, you can set up organizations to manage access to public or private packages.
+
+    2. The Command Line Interface (CLI):
+    The CLI runs from a terminal, and is how most developers interact with npm.
+
+    3. The registry:
+    The registry is a large public database of JavaScript software and the meta-information surrounding it.
+
+
+Q5. What are the modules in Node.js? Explain
+A5. Modules are the blocks of encapsulated code that communicates with an external application on the basis of their related functionality. Modules can be a single file or a collection of multiples files/folders. The reason programmers are heavily reliant on modules is because of their re-usability as well as the ability to break down a complex piece of code into manageable chunks.
+
+    Modules are of three types:
+
+    1. Core Modules:
+    Node.js has many built-in modules that are part of the platform and comes with Node.js installation
+
+    2. Local Modules:
+    Local modules are created locally in your Node.js application. It consists different functions declared inside a JavaScript object and we reuse them according to the requirement.
+
+    3. Third-party Modules:
+    Modules created by other people for use available online via npm's registry through npm CLI.
+
+    
