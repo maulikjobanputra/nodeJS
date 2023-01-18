@@ -1,0 +1,38 @@
+Q1. What is MongoDB?
+A1. MongoDB is an open source NoSQL database management program. MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need.
+
+Q2. What is difference between mongo DB and SQL?
+A2. MongoDB
+    MongoDB is a document-based, non-relational database management system.Another name for it is an object-based system.
+    Every record in MongoDB is kept as a separate document.
+    Documents from a specific class or group are kept in a “collection”.
+    MongoDB supports out-of-the-box replication and sharding and was built with high availability and scalability in mind.
+    It was created by MongoDB Inc. and was made available on February 11, 2009.
+
+    SQL
+    A table-based system is MySQL (or open-source relational database). The table-based architecture, which is regarded as a SQL database, is the data query structure for search.
+    Each individual entry is saved as a “row” in a database in MySQL.
+    Rows (also known as records) of a similar sort are kept in a “table.”
+    Although the MySQL architecture does not support effective replication and sharding, one can access related data via joins in MySQL, which reduces duplication.
+    On April 24, 1989, Microsoft Corporation first made this technology available.
+
+Q3. Create database for online shopping app?
+A3. The command for creating a database called shopDb is :- 'use shopDB'.
+
+Q4. Create Require collections for online shopping app and documents.
+A4. use.shopDB
+	  i. User : db.createCollection('users')
+	 ii. Product category : db.createCollection('categories')
+	iii. Product : db.createCollection('products')
+	 iv. Order : db.createCollection('orders')
+	  v. Review : db.createCollection('reviews')
+
+Q5. Write command to show all data from product collections and sort in ascending order.
+A5. db.products.find().sort({"name" : 1}).
+
+Q6. Update product price for particular product.
+A6. db.products.update({name : "particular product"},{$set : {price : 50}}).
+
+Q7. Write command to delete particular document and collection.
+A7. db.collection.deleteOne({name : "xyz"}). - To delete a particular document.
+    db.collection.drop(). - To delete a particular collection.
